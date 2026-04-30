@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net7.0;net8.0;net9.0;net10.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <IsAotCompatible>true</IsAotCompatible>
+    <!--<EnablePackageValidation>true</EnablePackageValidation>
+    <PackageValidationBaselineVersion>0.1.0-preview.0.1.0</PackageValidationBaselineVersion>-->
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference
+      Include="Pure.RelationalSchema.RichRelationalModel.Abstractions"
+      Version="0.1.0-preview.0.1.0"
+    />
+  </ItemGroup>
+</Project>
