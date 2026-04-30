@@ -2,8 +2,8 @@ version: 2
 updates:
 - package-ecosystem: nuget
   directories:
-    - "src/"
-    - "src/Tests/"
+    - "src/Pure.RelationalSchema.RichRelationalModel.EFCore.Models"
+    - "src/Tests/Pure.RelationalSchema.RichRelationalModel.EFCore.Models.Tests"
   schedule:
     interval: daily
 - package-ecosystem: "github-actions"
