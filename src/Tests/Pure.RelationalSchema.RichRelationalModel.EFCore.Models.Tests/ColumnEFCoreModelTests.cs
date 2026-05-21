@@ -18,8 +18,7 @@ public sealed record ColumnEFCoreModelTests
             id,
             new Guid(),
             new String("column_name"),
-            new Guid(),
-            new ColumnTypeEFCoreModel(new Guid(), new String("varchar"))
+            new Guid()
         );
 
         Assert.Equal(id.GuidValue, model.Id.GuidValue);
@@ -34,8 +33,7 @@ public sealed record ColumnEFCoreModelTests
             new Guid(),
             tableId,
             new String("column_name"),
-            new Guid(),
-            new ColumnTypeEFCoreModel(new Guid(), new String("varchar"))
+            new Guid()
         );
 
         Assert.Equal(tableId.GuidValue, model.TableId.GuidValue);
@@ -50,8 +48,7 @@ public sealed record ColumnEFCoreModelTests
             new Guid(),
             new Guid(),
             name,
-            new Guid(),
-            new ColumnTypeEFCoreModel(new Guid(), new String("varchar"))
+            new Guid()
         );
 
         Assert.Equal(name.TextValue, model.Name.TextValue);
@@ -66,8 +63,7 @@ public sealed record ColumnEFCoreModelTests
             new Guid(),
             new Guid(),
             new String("column_name"),
-            typeId,
-            new ColumnTypeEFCoreModel(new Guid(), new String("varchar"))
+            typeId
         );
 
         Assert.Equal(typeId.GuidValue, model.TypeId.GuidValue);

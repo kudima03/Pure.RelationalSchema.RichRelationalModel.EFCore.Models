@@ -17,11 +17,7 @@ public sealed record ForeignKeyEFCoreModelTests
             id,
             new Guid(),
             new Guid(),
-            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
-            [],
-            new Guid(),
-            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
-            []
+            new Guid()
         );
 
         Assert.Equal(id.GuidValue, model.Id.GuidValue);
@@ -36,11 +32,7 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             schemaId,
             new Guid(),
-            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
-            [],
-            new Guid(),
-            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
-            []
+            new Guid()
         );
 
         Assert.Equal(schemaId.GuidValue, model.SchemaId.GuidValue);
@@ -55,11 +47,7 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             new Guid(),
             referencingTableId,
-            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
-            [],
-            new Guid(),
-            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
-            []
+            new Guid()
         );
 
         Assert.Equal(referencingTableId.GuidValue, model.ReferencingTableId.GuidValue);
@@ -74,11 +62,7 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             new Guid(),
             new Guid(),
-            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
-            [],
-            referencedTableId,
-            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
-            []
+            referencedTableId
         );
 
         Assert.Equal(referencedTableId.GuidValue, model.ReferencedTableId.GuidValue);
