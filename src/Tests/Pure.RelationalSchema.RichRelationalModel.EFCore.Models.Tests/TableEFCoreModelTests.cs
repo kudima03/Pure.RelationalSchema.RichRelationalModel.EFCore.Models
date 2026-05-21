@@ -43,11 +43,7 @@ public sealed record TableEFCoreModelTests
     {
         IString name = new String("users");
 
-        ITableRelationalModel model = new TableEFCoreModel(
-            new Guid(),
-            new Guid(),
-            name
-        );
+        ITableRelationalModel model = new TableEFCoreModel(new Guid(), new Guid(), name);
 
         Assert.Equal(name.TextValue, model.Name.TextValue);
     }

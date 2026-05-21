@@ -1,6 +1,5 @@
 using Pure.Primitives.Abstractions.Bool;
 using Pure.Primitives.Abstractions.Guid;
-using Pure.Primitives.Abstractions.String;
 using Pure.RelationalSchema.RelationalModel.Abstractions;
 using Pure.RelationalSchema.RichRelationalModel.Abstractions;
 using Guid = Pure.Primitives.Guid.Guid;
@@ -16,11 +15,7 @@ public sealed record IndexEFCoreModelTests
     {
         IGuid id = new Guid();
 
-        IIndexRelationalModel model = new IndexEFCoreModel(
-            id,
-            new Guid(),
-            new True()
-        );
+        IIndexRelationalModel model = new IndexEFCoreModel(id, new Guid(), new True());
 
         Assert.Equal(id.GuidValue, model.Id.GuidValue);
     }

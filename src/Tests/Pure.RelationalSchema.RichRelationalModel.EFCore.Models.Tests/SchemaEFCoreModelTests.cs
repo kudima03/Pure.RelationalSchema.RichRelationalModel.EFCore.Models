@@ -14,10 +14,7 @@ public sealed record SchemaEFCoreModelTests
     {
         IGuid id = new Guid();
 
-        ISchemaRelationalModel model = new SchemaEFCoreModel(
-            id,
-            new String("public")
-        );
+        ISchemaRelationalModel model = new SchemaEFCoreModel(id, new String("public"));
 
         Assert.Equal(id.GuidValue, model.Id.GuidValue);
     }
@@ -27,10 +24,7 @@ public sealed record SchemaEFCoreModelTests
     {
         IString name = new String("public");
 
-        ISchemaRelationalModel model = new SchemaEFCoreModel(
-            new Guid(),
-            name
-        );
+        ISchemaRelationalModel model = new SchemaEFCoreModel(new Guid(), name);
 
         Assert.Equal(name.TextValue, model.Name.TextValue);
     }
@@ -40,13 +34,7 @@ public sealed record SchemaEFCoreModelTests
     {
         ICollection<TableEFCoreModel> tables =
         [
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("users"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
         ];
 
         ISchemaRichRelationalModel model = new SchemaEFCoreModel(
@@ -77,13 +65,7 @@ public sealed record SchemaEFCoreModelTests
                 ),
                 [],
                 new Guid(),
-                new TableEFCoreModel(
-                    new Guid(),
-                    new Guid(),
-                    new String("users"),
-                    [],
-                    []
-                ),
+                new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
                 []
             ),
         ];

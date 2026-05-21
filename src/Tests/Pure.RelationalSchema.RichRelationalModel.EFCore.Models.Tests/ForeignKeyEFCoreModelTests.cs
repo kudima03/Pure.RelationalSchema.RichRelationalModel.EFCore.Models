@@ -1,5 +1,4 @@
 using Pure.Primitives.Abstractions.Guid;
-using Pure.Primitives.Abstractions.String;
 using Pure.RelationalSchema.RelationalModel.Abstractions;
 using Pure.RelationalSchema.RichRelationalModel.Abstractions;
 using Guid = Pure.Primitives.Guid.Guid;
@@ -18,22 +17,10 @@ public sealed record ForeignKeyEFCoreModelTests
             id,
             new Guid(),
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("orders"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
             [],
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("users"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
             []
         );
 
@@ -49,22 +36,10 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             schemaId,
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("orders"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
             [],
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("users"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
             []
         );
 
@@ -80,22 +55,10 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             new Guid(),
             referencingTableId,
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("orders"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
             [],
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("users"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
             []
         );
 
@@ -111,22 +74,10 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             new Guid(),
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("orders"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
             [],
             referencedTableId,
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("users"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
             []
         );
 
@@ -151,13 +102,7 @@ public sealed record ForeignKeyEFCoreModelTests
             referencingTable,
             [],
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("users"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
             []
         );
 
@@ -179,13 +124,7 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             new Guid(),
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("orders"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
             [],
             new Guid(),
             referencedTable,
@@ -213,22 +152,10 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             new Guid(),
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("orders"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
             referencingColumns,
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("users"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
             []
         );
 
@@ -253,22 +180,10 @@ public sealed record ForeignKeyEFCoreModelTests
             new Guid(),
             new Guid(),
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("orders"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("orders"), [], []),
             [],
             new Guid(),
-            new TableEFCoreModel(
-                new Guid(),
-                new Guid(),
-                new String("users"),
-                [],
-                []
-            ),
+            new TableEFCoreModel(new Guid(), new Guid(), new String("users"), [], []),
             referencedColumns
         );
 
