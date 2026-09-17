@@ -15,6 +15,8 @@ dotnet test --no-restore                      # run xunit tests
 dotnet pack --configuration Release -p:Version=<version> --output .
 ```
 
+CI additionally passes `-p:AssemblyVersion` (pinned to the major) and `-p:FileVersion`; see `.github/workflows/publish-nuget.yml`.
+
 ## Architecture
 
 This is a **concrete implementation NuGet library** — six `sealed record` types, one per file, implementing the Rich Relational Model interfaces from `Pure.RelationalSchema.RichRelationalModel.Abstractions`.
