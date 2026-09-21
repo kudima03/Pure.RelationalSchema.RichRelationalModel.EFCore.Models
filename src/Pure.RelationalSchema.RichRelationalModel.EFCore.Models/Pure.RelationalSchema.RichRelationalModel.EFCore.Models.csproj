@@ -14,6 +14,7 @@
     <AssemblyName>Pure.RelationalSchema.RichRelationalModel.EFCore.Models</AssemblyName>
     <Authors>Dmitry Kurochkin</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/kudima03/Pure.RelationalSchema.RichRelationalModel.EFCore.Models</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
@@ -21,5 +22,8 @@
       Include="Pure.RelationalSchema.RichRelationalModel.Abstractions"
       Version="0.1.0-preview.0.1.0"
     />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
 </Project>
