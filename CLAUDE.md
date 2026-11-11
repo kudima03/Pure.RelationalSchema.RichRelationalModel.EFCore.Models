@@ -35,7 +35,7 @@ This is a **concrete implementation NuGet library** — six `sealed record` type
 
 **Multi-targeting:** net7.0, net8.0, net9.0, net10.0, net11.0. All records must remain AOT-compatible (`IsAotCompatible = true`).
 
-**Package validation:** `EnablePackageValidation = true` with `PackageValidationBaselineVersion = 0.1.0-preview.0.1.0`. Adding or removing public members fails the build.
+**Package validation:** `EnablePackageValidation = true` with `PackageValidationBaselineVersion = 0.1.0-preview.0.2.0`. Adding or removing public members fails the build.
 
 **Tests:** xunit project under `./src/Tests/`, targeting net11.0 only. CI enforces 100% line coverage and 100% mutation score (dotnet-stryker).
 
