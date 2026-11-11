@@ -6,6 +6,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.1.0-preview.0.2.0] — 2026-11-11
+
+### Added
+
+- Support for `net11.0`. The models now target `net7.0`, `net8.0`, `net9.0`,
+  `net10.0`, and `net11.0`.
+
+### Changed
+
+- Updated `Pure.RelationalSchema.RichRelationalModel.Abstractions` to
+  `0.1.0-preview.0.2.0`.
+- The README is now packed into the NuGet package.
+- Assembly versions are now derived from the release tag.
+- Releases are published to NuGet using trusted publishing.
+
+---
+
 ## [0.1.0-preview.0.1.0] — 2026-04-30
 
 ### Added
