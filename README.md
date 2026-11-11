@@ -32,7 +32,7 @@ All records are in the `Pure.RelationalSchema.RichRelationalModel.EFCore.Models`
 
 ## Dependencies
 
-- [`Pure.RelationalSchema.RichRelationalModel.Abstractions`](https://github.com/kudima03/Pure.RelationalSchema.RichRelationalModel.Abstractions/tree/0.1.0-preview.0.1.0) — interfaces that every model in this package implements (`ISchemaRichRelationalModel`, `ITableRichRelationalModel`, `IColumnRichRelationalModel`, `IForeignKeyRichRelationalModel`, `IIndexRichRelationalModel`, `IColumnTypeRichRelationalModel`).
+- [`Pure.RelationalSchema.RichRelationalModel.Abstractions`](https://github.com/kudima03/Pure.RelationalSchema.RichRelationalModel.Abstractions/tree/0.1.0-preview.0.2.0) — interfaces that every model in this package implements (`ISchemaRichRelationalModel`, `ITableRichRelationalModel`, `IColumnRichRelationalModel`, `IForeignKeyRichRelationalModel`, `IIndexRichRelationalModel`, `IColumnTypeRichRelationalModel`).
 
 ## Target Frameworks
 
